@@ -8,6 +8,12 @@ function convertToRoman(num) {
       5:['V', 5], 
       6:['I', 1]
     };
+for (const [symbol, value] of romanNumerals) {
+    while (num >= value) {
+        roman += symbol;
+        num -= value;
+    }
+}
 
   //your code here
 
